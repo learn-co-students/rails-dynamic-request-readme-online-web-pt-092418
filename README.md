@@ -85,7 +85,7 @@ create a corresponding `show` action in the PostsController. Let's get this
 failure fixed with the code below:
 
 ```ruby
-# app/controllers/posts_controller.rb
+posts_controller.rb
 
 class PostsController < ApplicationController
   def show
@@ -138,7 +138,7 @@ called `params`. Since we named the route `:id`, the ID will be the value of the
 `:id` key, stored in `params[:id]`. Let's set that up here:
 
 ```ruby
-# app/controllers/posts_controller.rb
+posts_controller.rb
 
 def show
   @post = Post.find(params[:id])
